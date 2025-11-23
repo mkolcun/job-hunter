@@ -1,0 +1,137 @@
+{
+  "extraction_schema": {
+    "required": {
+      "title": {
+        "type": "string",
+        "aliases": ["job title", "position", "role", "stelle", "titel", "poste"],
+        "min_confidence": 80,
+        "description": "Job title or position name"
+      },
+      "company": {
+        "type": "string",
+        "aliases": ["employer", "organization", "company name", "unternehmen", "société", "empresa"],
+        "min_confidence": 70,
+        "description": "Company or organization name"
+      },
+      "location": {
+        "type": "string",
+        "aliases": ["standort", "location", "lieu", "ciudad", "ubicación"],
+        "min_confidence": 70,
+        "description": "Job location (city, country)"
+      }
+    },
+
+    "high_priority": {
+      "salary": {
+        "type": "object",
+        "structure": {
+          "min": "number",
+          "max": "number",
+          "currency": "string",
+          "period": "string"
+        },
+        "aliases": ["compensation", "pay", "gehalt", "salaire", "salario", "vergütung"],
+        "min_confidence": 60,
+        "description": "Salary or compensation range"
+      },
+      "description": {
+        "type": "string",
+        "aliases": ["job description", "about the role", "beschreibung", "description du poste"],
+        "min_confidence": 70,
+        "description": "Full job description"
+      },
+      "contactEmail": {
+        "type": "email",
+        "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+        "aliases": ["email", "contact email", "e-mail", "kontakt"],
+        "min_confidence": 70,
+        "description": "Contact email address"
+      }
+    },
+
+    "medium_priority": {
+      "requirements": {
+        "type": "array",
+        "aliases": ["qualifications", "what we're looking for", "anforderungen", "exigences", "requisitos"],
+        "min_confidence": 60,
+        "description": "Job requirements or qualifications"
+      },
+      "responsibilities": {
+        "type": "array",
+        "aliases": ["your tasks", "what you'll do", "aufgaben", "responsabilités", "responsabilidades"],
+        "min_confidence": 60,
+        "description": "Job responsibilities or duties"
+      },
+      "jobType": {
+        "type": "string",
+        "values": ["Full-time", "Part-time", "Contract", "Temporary", "Internship"],
+        "aliases": ["employment type", "job type", "arbeitszeit", "type de contrat"],
+        "min_confidence": 60,
+        "description": "Type of employment"
+      },
+      "experienceLevel": {
+        "type": "string",
+        "values": ["Entry Level", "Junior", "Mid-Level", "Senior", "Lead", "Executive"],
+        "aliases": ["level", "seniority", "experience", "erfahrung", "niveau"],
+        "min_confidence": 50,
+        "description": "Required experience level"
+      }
+    },
+
+    "optional": {
+      "benefits": {
+        "type": "array",
+        "aliases": ["perks", "what we offer", "benefits package", "vorteile", "avantages"],
+        "min_confidence": 50,
+        "description": "Employee benefits and perks"
+      },
+      "remotePolicy": {
+        "type": "string",
+        "values": ["remote", "hybrid", "on-site"],
+        "aliases": ["work location", "location type", "remote work", "homeoffice", "télétravail"],
+        "min_confidence": 60,
+        "description": "Remote work policy"
+      },
+      "companyDescription": {
+        "type": "string",
+        "aliases": ["about us", "about the company", "über uns", "à propos"],
+        "min_confidence": 50,
+        "description": "Company description"
+      },
+      "contactPhone": {
+        "type": "phone",
+        "pattern": "\\+?\\d[\\d\\s\\-\\(\\)]{7,}",
+        "aliases": ["phone", "telephone", "telefon", "téléphone"],
+        "min_confidence": 60,
+        "description": "Contact phone number"
+      },
+      "contactPerson": {
+        "type": "object",
+        "structure": {
+          "name": "string",
+          "title": "string"
+        },
+        "aliases": ["hiring manager", "recruiter", "contact person", "ansprechpartner"],
+        "min_confidence": 50,
+        "description": "Contact person information"
+      },
+      "postedDate": {
+        "type": "date",
+        "pattern": "\\d{4}-\\d{2}-\\d{2}|\\d{1,2}/\\d{1,2}/\\d{4}",
+        "aliases": ["posted", "published", "veröffentlicht", "publié"],
+        "min_confidence": 60,
+        "description": "Job posting date"
+      }
+    },
+
+    "custom_fields": {}
+  },
+
+  "extraction_settings": {
+    "language_priority": ["en", "de", "fr"],
+    "include_low_confidence": false,
+    "max_processing_time_per_job": 30,
+    "screenshot_on_failure": true,
+    "save_html": false
+  }
+}

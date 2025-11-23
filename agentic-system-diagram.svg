@@ -1,0 +1,186 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#1a1a1a"/>
+
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="300" fill="#e5e5e5" text-anchor="middle">
+    Agentic System Architecture
+  </text>
+
+  <!-- Main Container -->
+  <rect x="50" y="80" width="1100" height="650" rx="10" fill="#242424" stroke="#404040" stroke-width="2"/>
+
+  <!-- Column Headers -->
+  <text x="150" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#e5e5e5">
+    Commands
+  </text>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#e5e5e5">
+    Skills (AI Agents)
+  </text>
+  <text x="750" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#e5e5e5">
+    Tools
+  </text>
+  <text x="1000" y="120" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#e5e5e5">
+    Hooks
+  </text>
+
+  <!-- Divider lines -->
+  <line x1="80" y1="135" x2="1120" y2="135" stroke="#525252" stroke-width="1"/>
+
+  <!-- Commands Column -->
+  <g id="commands">
+    <rect x="80" y="160" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="190" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /scrape
+    </text>
+
+    <rect x="80" y="225" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="255" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /consolidate
+    </text>
+
+    <rect x="80" y="290" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="320" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /filter
+    </text>
+
+    <rect x="80" y="355" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="385" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /personalize
+    </text>
+
+    <rect x="80" y="420" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="450" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /analyze
+    </text>
+
+    <rect x="80" y="485" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="180" y="515" font-family="Arial, sans-serif" font-size="14" fill="#d4d4d4" text-anchor="middle">
+      /resume
+    </text>
+  </g>
+
+  <!-- Skills Column -->
+  <g id="skills">
+    <rect x="320" y="160" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="190" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      session-manager
+    </text>
+
+    <rect x="320" y="225" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="255" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      consolidator
+    </text>
+
+    <rect x="320" y="290" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="320" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      job-filter
+    </text>
+
+    <rect x="320" y="355" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="385" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      application-personalizer
+    </text>
+
+    <rect x="320" y="420" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="450" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      quality-analyzer
+    </text>
+
+    <rect x="320" y="485" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="515" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      deduplicator
+    </text>
+
+    <rect x="320" y="550" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="420" y="580" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      schema-builder
+    </text>
+  </g>
+
+  <!-- Tools Column -->
+  <g id="tools">
+    <rect x="660" y="160" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="190" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      browser_controller.py
+    </text>
+
+    <rect x="660" y="225" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="255" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      html_extractor.py
+    </text>
+
+    <rect x="660" y="290" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="320" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      schema_processor.py
+    </text>
+
+    <rect x="660" y="355" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="385" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      captcha_detector.py
+    </text>
+
+    <rect x="660" y="420" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="450" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      url_queue.py
+    </text>
+
+    <rect x="660" y="485" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="760" y="515" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      report_generator.py
+    </text>
+  </g>
+
+  <!-- Hooks Column -->
+  <g id="hooks">
+    <rect x="920" y="160" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="1020" y="190" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      validate_extraction.py
+    </text>
+
+    <rect x="920" y="225" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="1020" y="255" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      rate_limiter.py
+    </text>
+
+    <rect x="920" y="290" width="200" height="50" rx="5" fill="#2a2a2a" stroke="#525252" stroke-width="1"/>
+    <text x="1020" y="320" font-family="Arial, sans-serif" font-size="13" fill="#d4d4d4" text-anchor="middle">
+      progress_tracker.py
+    </text>
+  </g>
+
+  <!-- Connection arrows -->
+  <defs>
+    <marker id="arrow-light" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#737373" />
+    </marker>
+  </defs>
+
+  <!-- Command to Skills arrows -->
+  <line x1="280" y1="185" x2="320" y2="185" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="280" y1="250" x2="320" y2="250" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="280" y1="315" x2="320" y2="315" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="280" y1="380" x2="320" y2="380" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="280" y1="445" x2="320" y2="445" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+
+  <!-- Skills to Tools arrows -->
+  <line x1="520" y1="185" x2="660" y2="185" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="520" y1="250" x2="660" y2="250" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+  <line x1="520" y1="315" x2="660" y2="315" stroke="#737373" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+
+  <!-- Bottom annotation -->
+  <rect x="80" y="640" width="1040" height="70" rx="5" fill="#242424" stroke="#404040" stroke-width="1"/>
+
+  <text x="600" y="665" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#d4d4d4" text-anchor="middle">
+    .claude/ Directory Structure
+  </text>
+
+  <text x="600" y="690" font-family="Arial, sans-serif" font-size="12" fill="#a3a3a3" text-anchor="middle">
+    Commands invoke Skills (AI agents) → Skills use Tools → Hooks validate &amp; track
+  </text>
+
+  <!-- Footer -->
+  <text x="600" y="770" font-family="Arial, sans-serif" font-size="11" fill="#737373" text-anchor="middle">
+    Made by MaK • AI-Powered Agentic System
+  </text>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#1a1a1a"/>
+
+  <!-- Crosshair target (hunter theme) -->
+  <g id="crosshair">
+    <!-- Outer circle -->
+    <circle cx="200" cy="200" r="120" fill="none" stroke="#e5e5e5" stroke-width="3"/>
+
+    <!-- Middle circle -->
+    <circle cx="200" cy="200" r="80" fill="none" stroke="#d4d4d4" stroke-width="2"/>
+
+    <!-- Inner circle -->
+    <circle cx="200" cy="200" r="40" fill="none" stroke="#c4c4c4" stroke-width="2"/>
+
+    <!-- Center dot -->
+    <circle cx="200" cy="200" r="8" fill="#f5f5f5"/>
+
+    <!-- Crosshair lines -->
+    <line x1="200" y1="60" x2="200" y2="340" stroke="#e5e5e5" stroke-width="2"/>
+    <line x1="60" y1="200" x2="340" y2="200" stroke="#e5e5e5" stroke-width="2"/>
+
+    <!-- Tick marks on outer circle -->
+    <line x1="200" y1="60" x2="200" y2="75" stroke="#e5e5e5" stroke-width="3"/>
+    <line x1="200" y1="325" x2="200" y2="340" stroke="#e5e5e5" stroke-width="3"/>
+    <line x1="60" y1="200" x2="75" y2="200" stroke="#e5e5e5" stroke-width="3"/>
+    <line x1="325" y1="200" x2="340" y2="200" stroke="#e5e5e5" stroke-width="3"/>
+  </g>
+
+  <!-- Document icon (job theme) -->
+  <g id="document" transform="translate(165, 165)">
+    <!-- Document body -->
+    <rect x="0" y="0" width="40" height="50" rx="3" fill="#2a2a2a" stroke="#a3a3a3" stroke-width="2"/>
+
+    <!-- Document lines -->
+    <line x1="8" y1="12" x2="32" y2="12" stroke="#737373" stroke-width="1.5"/>
+    <line x1="8" y1="20" x2="32" y2="20" stroke="#737373" stroke-width="1.5"/>
+    <line x1="8" y1="28" x2="28" y2="28" stroke="#737373" stroke-width="1.5"/>
+    <line x1="8" y1="36" x2="25" y2="36" stroke="#737373" stroke-width="1.5"/>
+
+    <!-- Checkmark -->
+    <polyline points="12,42 16,46 28,34" fill="none" stroke="#f5f5f5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#e5e5e5" text-anchor="middle">
+    JOB HUNTER
+  </text>
+</svg>
